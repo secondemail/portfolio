@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+.btnA1,.btnA2,.btnA,.test1,.test{
+  transition: 0.3s all ease-in-out;
+  user-select: none;
+}
+.btnA:hover .btnA1{
+  left: -100px;
+}
+.btnA:hover .btnA2{
+  right: -100px;
+}
+
+.test:hover .test1{
+  top: 40px;
+}
+.testnav1 div{
+  transition: 0.3s all ease-in-out;
+  user-select: none;
+}
+
+.font{
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.card{
+	position: relative;
+	padding: 20px 50px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+  overflow: hidden;
+}
+
+.card:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+.card:hover:after{
+	left: 100%;
+}
+.card span{
+	position: absolute;
+	display: block;
+	transition: 0.5s ease;
+}
+.card span:nth-child(1)
+{
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+.card:hover span:nth-child(1)
+{
+	width: 100%;
+	transform: translateX(100%);
+}
+.card span:nth-child(3)
+{
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+.card:hover span:nth-child(3)
+{
+	width: 100%;
+	transform: translateX(-100%);
+}
+.card span:nth-child(2)
+{
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+.card:hover span:nth-child(2)
+{
+	height: 100%;
+	transform: translateY(100%);
+}
+.card span:nth-child(4)
+{
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+.card:hover span:nth-child(4)
+{
+	height: 100%;
+	transform: translateY(-100%);
+}
+
+.asd div{
+	transition: 0.5s ease;
+}
+
+.asd:hover .asd1{
+	top: -600px;
+}
+.asd:hover .asd2{
+	left: -600px;
+}
+.asd:hover .asd3{
+	bottom: -600px;
+}
+.asd:hover .asd4{
+	right: -600px;
+}
+
